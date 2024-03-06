@@ -31,9 +31,9 @@ jobs:
         with:
           github-username: "hstought"
           token: ${{ secrets.GITHUB_TOKEN }}
-
-      - name: Echo the output email (Should not run)
-        run: echo "The email is ${{ steps.fail_bad_email_test.outputs.email }}"
+      - name: Job succeeded (if previous step failed)
+        if: ${{ failure() }}
+        run: echo "Job succeeded as expected (fail_bad_email_test likely failed)"
 
   fail_bad_user:
     runs-on: ubuntu-latest
@@ -45,6 +45,6 @@ jobs:
         with:
           github-username: "evvvvvaaannnnneeerrrbbb"
           token: ${{ secrets.GITHUB_TOKEN }}
-
-      - name: Echo the output email (Should not run)
-        run: echo "The email is ${{ steps.get_email_after_bot_test.outputs.email }}"
+      - name: Job succeeded (if previous step failed)
+        if: ${{ failure() }}
+        run: echo "Job succeeded as expected (fail_bad_email_test likely failed)"
