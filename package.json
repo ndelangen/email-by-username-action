@@ -3,13 +3,13 @@
   "version": "1.0.0",
   "description": "GitHub Actions Plugin to get a GitHub user's email based on their username",
   "keywords": [],
-  "homepage": "https://github.com/ndelangen/get-github-email-by-username-action#readme",
+  "homepage": "https://github.com/ndelangen/email-by-username-action#readme",
   "bugs": {
-    "url": "https://github.com/ndelangen/get-github-email-by-username-action/issues"
+    "url": "https://github.com/ndelangen/email-by-username-action/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ndelangen/get-github-email-by-username-action.git"
+    "url": "git+https://github.com/ndelangen/email-by-username-action.git"
   },
   "license": "ISC",
   "author": "",

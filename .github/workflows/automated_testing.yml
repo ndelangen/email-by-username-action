@@ -13,7 +13,7 @@ jobs:
     steps:
       - name: get easy email
         id: get_easy_email_test
-        uses: ndelangen/get-github-email-by-username-action@main
+        uses: ndelangen/email-by-username-action@main
         with:
           github-username: "ndelangen"
           token: ${{ secrets.GITHUB_TOKEN }}
@@ -27,7 +27,7 @@ jobs:
     steps:
       - name: fail bad email
         id: fail_bad_email_test
-        uses: ndelangen/get-github-email-by-username-action@main
+        uses: ndelangen/email-by-username-action@main
         continue-on-error: true
         with:
           github-username: "hstought"
@@ -42,7 +42,7 @@ jobs:
     steps:
       - name: get email after bot
         id: get_email_after_bot_test
-        uses: ndelangen/get-github-email-by-username-action@main
+        uses: ndelangen/email-by-username-action@main
         continue-on-error: true
         with:
           github-username: "evvvvvaaannnnneeerrrbbb"
