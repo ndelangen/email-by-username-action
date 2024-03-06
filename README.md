@@ -24,7 +24,7 @@ jobs:
         continue-on-error: true
         with:
           github-username: 'ndelangen'
-          token: 'token'
+          token: ${{ secrets.GITHUB_TOKEN }}
 
       # Use the output from the `test` step
       - name: Print the found email
