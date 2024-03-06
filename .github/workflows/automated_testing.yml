@@ -28,6 +28,7 @@ jobs:
       - name: fail bad email
         id: fail_bad_email_test
         uses: ndelangen/get-github-email-by-username-action@main
+        continue-on-error: true
         with:
           github-username: "hstought"
           token: ${{ secrets.GITHUB_TOKEN }}
@@ -42,6 +43,7 @@ jobs:
       - name: get email after bot
         id: get_email_after_bot_test
         uses: ndelangen/get-github-email-by-username-action@main
+        continue-on-error: true
         with:
           github-username: "evvvvvaaannnnneeerrrbbb"
           token: ${{ secrets.GITHUB_TOKEN }}
