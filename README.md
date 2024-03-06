@@ -4,7 +4,7 @@ GitHub Actions Plugin to get a GitHub user's email based on their username
 
 ## Usage
 
-Takes in a username & Github personal access token (https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token) as an input.
+Takes in a username & [Github personal access token](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token) as an input.
 
 ## Example
 
