@@ -30,3 +30,6 @@ jobs:
       - name: Print the found email
         run: echo "The email is ${{ steps.test.outputs.email || 'github-action@gihub.com' }}"
 ```
+
+For more examples, see:
+https://github.com/ndelangen/email-by-username-action/blob/main/.github/workflows/automated_testing.yml
