@@ -8,7 +8,7 @@ Takes in a username & Github personal access token (https://docs.github.com/en/a
 
 ## Example
 
-```
+```yml
 name: Test Get Email from Github Username
 on:
   workflow_dispatch:
