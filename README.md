@@ -21,11 +21,12 @@ jobs:
       - name: get email
         id: test
         uses: ndelangen/email-by-username-action@main
+        continue-on-error: true
         with:
           github-username: 'ndelangen'
           token: 'token'
 
       # Use the output from the `test` step
       - name: Print the found email
-        run: echo "The email is ${{ steps.test.outputs.email }}"
+        run: echo "The email is ${{ steps.test.outputs.email || 'github-action@gihub.com' }}"
 ```
